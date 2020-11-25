@@ -125,10 +125,7 @@ class ResNet(nn.Module):
 
         return x
     
-    def show_params(self):
-        for m in self.modules():
-            if isinstance(m, QuantConv2d):
-                m.show_params()
+ 
 
 def resnet50(pretrained=False, **kwargs):
     """Constructs a ResNet-50 model.
