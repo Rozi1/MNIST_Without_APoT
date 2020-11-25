@@ -112,7 +112,7 @@ def main():
    
     if args.evaluate:
         validate(testloader, model, criterion)
-        model.module.show_params()
+        
         return
     writer = SummaryWriter(comment=fdir.replace('result/', ''))
     """ Now let's take a look at some examples. We'll use the test_loader for this."""
