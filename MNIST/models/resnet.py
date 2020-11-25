@@ -127,7 +127,7 @@ class ResNet(nn.Module):
     
     def show_params(self):
         for m in self.modules():
-            if isinstance(m, nn.Conv2d):
+            if isinstance(m, QuantConv2d):
                 m.show_params()
 
 def resnet50(pretrained=False, **kwargs):
