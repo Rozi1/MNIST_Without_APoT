@@ -131,7 +131,7 @@ def main():
         # train for one epoch
         # model.module.record_weight(writer, epoch)
         if epoch%10 == 1:
-            model.module.show_params()
+            """model.module.show_params()"""
         # model.module.record_clip(writer, epoch)
         train(trainloader, model, criterion, optimizer, epoch)
 
